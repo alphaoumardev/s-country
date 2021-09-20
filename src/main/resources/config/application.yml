@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: vue_boot
+  profiles:
+    active: dev
+  jackson:
+    time-zone: local
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6779
+    password: 0
+    timeout: 5000
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Mysql8InnoDBDialect
+    open-in-view: true
+#login-code:
+#  expiration: 2
+#
+#code:
+#  expiration: 5
+
+
+
